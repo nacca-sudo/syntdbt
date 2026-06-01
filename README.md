@@ -4,7 +4,12 @@ Code for the paper Synthetic Digital Breast Tomosynthesis Dataset with Tumor Seg
 ## 🗂️ Visual Structure
  
 ```
-BreasTomo-Synth Dataset (15-25 GB)
+.csv ........... Main exam info (30 rows)
+   
+```
+ 
+---
+ BreasTomo-Synth Dataset (15-25 GB)
 │
 ├─ 📁 dbt_001 ...................... Examination 1
 │  ├─ 📁 img_dbt_001
@@ -12,14 +17,14 @@ BreasTomo-Synth Dataset (15-25 GB)
 │  │                               16-bit grayscale, ~100 slices
 │  │
 │  └─ 📁 mask_dbt_001
-│     └─ 📄 BTS_VOL_001.tif ........ Multi-slice TIFF (50-100 MB)
+│     └─ 📄 MASK_BTS_VOL_001.tif ........ Multi-slice TIFF (50-100 MB)
 │                                 Binary (0=background, 1=lesion)
 │
 ├─ 📁 dbt_002 ...................... Examination 2
 │  ├─ 📁 img_dbt_002
 │  │  └─ 📄 BTS_VOL_002.tif
 │  └─ 📁 mask_dbt_002
-│     └─ 📄 BTS_VOL_002.tif
+│     └─ 📄 MASK_BTS_VOL_002.tif
 │
 ├─ 📁 dbt_003 through dbt_029 ...... Examinations 3-29 (same structure)
 │
@@ -27,15 +32,10 @@ BreasTomo-Synth Dataset (15-25 GB)
 │  ├─ 📁 img_dbt_030
 │  │  └─ 📄 BTS_VOL_030.tif
 │  └─ 📁 mask_dbt_030
-│     └─ 📄 BTS_VOL_030.tif
+│     └─ 📄 MASK_BTS_VOL_030.tif
 │
 └─ 📁 metadata ..................... Metadata folder
-   ├─ 📊 dataset_metadata.csv ........... Main exam info (30 rows)
-   
-```
- 
----
- 
+   ├─ 📊 dataset_metadata
 ## 📊 Dataset Content Summary
  
 | Metric | Value |
@@ -58,10 +58,10 @@ BreasTomo-Synth Dataset (15-25 GB)
 ```
 Exam Number | Folder Name        | Image File          | Mask File
 ------------|-------------------|---------------------|--------------------
-1           | dbt_001            | BTS_VOL_001.tif     | BTS_VOL_001.tif
-5           | dbt_005            | BTS_VOL_005.tif     | BTS_VOL_005.tif
-15          | dbt_015            | BTS_VOL_015.tif     | BTS_VOL_015.tif
-30          | dbt_030            | BTS_VOL_030.tif     | BTS_VOL_030.tif
+1           | dbt_001            | BTS_VOL_001.tif     | MASK_BTS_VOL_001.tif
+5           | dbt_005            | BTS_VOL_005.tif     | MASK_BTS_VOL_005.tif
+15          | dbt_015            | BTS_VOL_015.tif     | MASK_BTS_VOL_015.tif
+30          | dbt_030            | BTS_VOL_030.tif     | MASK_BTS_VOL_030.tif
 ```
  
 **Key Rule**: Always use 3-digit format with leading zeros (dbt_001, NOT dbt_1)
