@@ -8,8 +8,9 @@ Code for the paper Synthetic Digital Breast Tomosynthesis Dataset with Tumor Seg
    
 ```
  
----
- BreasTomo-Synth Dataset (15-25 GB)
+## BreasTomo-Synth Dataset (15-25 GB)
+```
+ 
 │
 ├─ 📁 dbt_001 ...................... Examination 1
 │  ├─ 📁 img_dbt_001
@@ -36,6 +37,8 @@ Code for the paper Synthetic Digital Breast Tomosynthesis Dataset with Tumor Seg
 │
 └─ 📁 metadata ..................... Metadata folder
    ├─ 📊 dataset_metadata
+```
+
 ## 📊 Dataset Content Summary
  
 | Metric | Value |
