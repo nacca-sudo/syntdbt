@@ -8,7 +8,7 @@ ROI.csv ........... Main exam info (174 rows)
 Volume.csv ........... Main exam info (30 rows)
 ```
  
----
+```
  BreasTomo-Synth Dataset (400 MB)
 │
 ├─ 📁 dbt_001 ...................... Examination 1
@@ -51,12 +51,13 @@ Volume.csv ........... Main exam info (30 rows)
 | **Metadata Records** | 90+ (across 3 CSV files) |
 | **Total Disk Space** | ~400 MB |
  
----
+```
  
 ## 🔗 File Naming Pattern
  
 ### Three-Digit Zero-Padded Numbers
- 
+
+
 ```
 Exam Number | Folder Name        | Image File          | Mask File
 ------------|-------------------|---------------------|--------------------
@@ -68,7 +69,7 @@ Exam Number | Folder Name        | Image File          | Mask File
  
 **Key Rule**: Always use 3-digit format with leading zeros (dbt_001, NOT dbt_1)
  
----
+```
  
 ## 📐 Image Specifications
  
@@ -108,7 +109,7 @@ Annotation:       Manually delineated by expert operators
 - voxel_spacing_mm, slice_thickness_mm, num_slices
 - image_height, image_width, has_lesion
  
----
+```
  
 ## 🏥 Breast Density Distribution
  
