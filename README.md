@@ -14,7 +14,7 @@ Volume.csv ........... Main exam info (30 rows)
 ├─ 📁 dbt_001 ...................... Examination 1
 │  ├─ 📁 img_dbt_001
 │  │  └─ 📄 BTS_VOL_001.tif ........ Multi-slice TIFF (~7 MB)
-│  │                               8-bit grayscale, ~38 slices
+│  │                               8-bit grayscale, ~15 slices
 │  │
 │  └─ 📁 mask_dbt_001
 │     └─ 📄 MASK_BTS_VOL_001.tif ........ Multi-slice TIFF (~7 MB)
@@ -80,7 +80,7 @@ Format:           Multi-page TIFF
 Data Type:        Unsigned 8-bit integer 
 Pixel Values:     X-ray intensity (higher = denser tissue)
 Dimensions:       ~1130 × ~477 pixels per slice
-Slices per File:  ~38 consecutive 2D slices
+Slices per File:  ~15 consecutive 2D slices
 Total Size:       ~400 MB per examination
 Voxel Spacing:    0.085 mm (isotropic)
 ```
